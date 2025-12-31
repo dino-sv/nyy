@@ -17,6 +17,11 @@
 <style>
 *{box-sizing:border-box}
 :root{--accent:#ff1e56}
+  button img{
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  border-radius:6px;
+  }
 
 body{
   margin:0;height:100vh;
@@ -260,20 +265,31 @@ const hold=document.getElementById('holdHeart');
 hold.addEventListener('mousedown',()=>holdTimer=setTimeout(next,3000));
 hold.addEventListener('mouseup',()=>clearTimeout(holdTimer));
 
-const confession=`
+const confession = `
 hey ${player}.
-
-my heart’s been trying to tell me something,
-and i finally listened.
+my heart’s been trying to tell me something for a while now,
+and i think i finally listened.
 
 i keep thinking about you.
-a lot.
+like… a lot.
 
-it’s the way you smile,
-the way you exist so gently.
+and yeah, you’re really cute—
+but it’s more than that.
+
+it’s the way you smile without realizing it.
+the way you talk about the smallest things like they matter.
+the way you’re kind, even when no one’s watching.
+
+you make me want to be softer.
+braver.
+more honest.
+
+okay.
+here it is—
 
 i like you.
-that’s all.
+because you’re you.
+and telling you this is more than enough.
 `;
 let i=0;
 function typeLetter(){
